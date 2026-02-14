@@ -1,12 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Mi CV</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jorge Luján Rodríguez - CV</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #d1d5db;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #1e40af;
+    }
+
+    iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      iframe {
+        height: 500px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Mi Curriculum</h1>
-  <a href="Jorge_Lujan_Rodriguez_CV.pdf" target="_blank">Ver CV</a>
-  <br><br>
-  <embed src="Jorge_Lujan_Rodriguez_CV.pdf" type="application/pdf" width="100%" height="600px" />
+
+    <header>
+    <h1>Jorge Luján Rodríguez</h1>
+    <p>Computer Systems Engineering Student | Passionate about Software Development and Technology</p>
+    </header>
+
+
+  <div class="container">
+    <a class="btn" href="Jorge_Lujan_Rodriguez_CV.pdf" target="_blank"> Download Resume (PDF)</a>
+
+    <iframe src="Jorge_Lujan_Rodriguez_CV.pdf"></iframe>
+  </div>
+
+  <footer>
+    © 2026 Jorge Luján Rodríguez
+  </footer>
+
 </body>
 </html>
