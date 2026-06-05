@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jorge Luján Rodríguez – CV</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11pt;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: #fff;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 48px 80px;
+    }
+    h1 {
+      font-size: 22pt;
+      font-weight: bold;
+      color: #111;
+      margin-bottom: 6px;
+    }
+    .contact {
+      font-size: 10pt;
+      color: #444;
+      margin-bottom: 28px;
+    }
+    .contact a {
+      color: #444;
+      text-decoration: none;
+    }
+    .lang-switch {
+      font-size: 10pt;
+      margin-bottom: 18px;
+    }
+    .lang-switch a {
+      color: #555;
+      text-decoration: none;
+      border-bottom: 1px solid #ccc;
+    }
+    .lang-switch a:hover { color: #111; }
+    h2 {
+      font-size: 12pt;
+      font-weight: bold;
+      color: #111;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      margin-top: 26px;
+      margin-bottom: 8px;
+    }
+    h3 {
+      font-size: 11pt;
+      font-weight: bold;
+      color: #111;
+      margin-top: 14px;
+      margin-bottom: 2px;
+    }
+    p {
+      margin-bottom: 8px;
+    }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 6px;
+    }
+    li {
+      margin-bottom: 3px;
+    }
+    .meta {
+      font-size: 10pt;
+      color: #555;
+      margin-bottom: 5px;
+      font-style: italic;
+    }
+    @media print {
+      body { margin: 0; padding: 30px 40px; }
+      .lang-switch { display: none; }
+    }
+    @media (max-width: 600px) {
+      body { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="lang-switch">
+    <a href="cv_es.html">Ver en Español</a>
+  </div>
+
+  <h1>Jorge Luján Rodríguez</h1>
+  <div class="contact">
+    Chihuahua, MX &nbsp;&middot;&nbsp;
+    jorge_rdgzg90@hotmail.com &nbsp;&middot;&nbsp;
+    github.com/j0rg312 &nbsp;&middot;&nbsp;
+    ika.mx/home
+  </div>
+
+  <h2>Professional Summary</h2>
+  <p>
+    Computer Systems Engineering student with strong academic background and practical experience in full-stack development.
+    Skilled in building modern web applications using Angular, React, Next.js, Spring Boot, and FastAPI, with solid knowledge
+    of database management, cloud-based architectures, and API design (REST, RESTful, gRPC).
+    Particularly interested in research related to distributed systems, cloud computing, artificial intelligence, and
+    human-computer interaction. Open to contributing to collaborative research projects through Mitacs Globalink.
+  </p>
+
+  <h2>Technical Skills</h2>
+  <ul>
+    <li><strong>Frontend:</strong> Angular, React, Next.js, Vite.js, Tailwind CSS, Bootstrap, Zustand, Radix UI</li>
+    <li><strong>Backend:</strong> Spring Boot, Node.js, NestJS, FastAPI</li>
+    <li><strong>APIs:</strong> REST API, RESTful, gRPC</li>
+    <li><strong>Databases:</strong> PostgreSQL, MySQL, Supabase, Redis</li>
+    <li><strong>Generative AI:</strong> Google Gemini AI</li>
+    <li><strong>DevOps &amp; Tools:</strong> Git, GitHub, GitLab, Docker, Docker Compose</li>
+    <li><strong>API Testing:</strong> Postman, Insomnia, Thunder Client</li>
+    <li><strong>Languages:</strong> Spanish (Native), English (Intermediate – B2)</li>
+  </ul>
+
+  <h2>Education</h2>
+  <h3>B.S. in Computer Systems Engineering</h3>
+  <div class="meta">Instituto Tecnológico de México – Campus Chihuahua II &nbsp;&middot;&nbsp; Chihuahua, MX &nbsp;&middot;&nbsp; 2021 – Present</div>
+  <ul>
+    <li>Relevant coursework: Data Structures, Databases, Operating Systems, Software Engineering, Artificial Intelligence.</li>
+  </ul>
+
+  <h2>Experience</h2>
+  <h3>Full Stack Developer (Freelance / Practical Experience)</h3>
+  <div class="meta">Remote &nbsp;&middot;&nbsp; Aug 2023 – Present</div>
+  <ul>
+    <li>Developed a customizable dashboard with drag-and-drop functionality and persistent user-specific layouts.</li>
+    <li>Designed and implemented a dynamic media system replacing hardcoded assets, enabling real-time content management.</li>
+    <li>Redesigned application UI/UX with accessibility features and dark mode for enhanced usability.</li>
+    <li>Deployed a multi-service architecture with Docker Compose, including Angular frontend, Spring Boot backend, NestJS microservice, PostgreSQL database, and pgAdmin.</li>
+    <li>Currently exploring Kubernetes for container orchestration and scalability.</li>
+  </ul>
+
+  <h2>Academic &amp; Personal Projects</h2>
+
+  <h3>SYNERGOS – Construction Management &amp; Automation System</h3>
+  <div class="meta">Personal Project &nbsp;&middot;&nbsp; 2026 – Present</div>
+  <ul>
+    <li>Designed and developed a multi-tenant web platform for construction companies with 18+ modules covering project management, budgeting, inventory, personnel, payroll, contracts, procurement, finance, communications, and documents.</li>
+    <li>Backend built with FastAPI following Clean Architecture; JWT authentication with granular RBAC per module and organization; PostgreSQL and Redis for persistence and caching; async task queue with ARQ.</li>
+    <li>Next.js 16 frontend with auto-generated TypeScript SDK from the backend's OpenAPI schema; PWA with VAPID push notifications.</li>
+    <li>Integrated architectural blueprint analysis using Google Gemini AI (OCR + computer vision) for construction element detection and quantity estimation, exportable to project budgets.</li>
+    <li>Technologies: Next.js 16, FastAPI, PostgreSQL, Redis, Docker Compose, Google Gemini AI, Radix UI, Zustand</li>
+  </ul>
+
+  <h3>Better Than Yesterday (BTY) – Personal Life Dashboard</h3>
+  <div class="meta">Personal Project &nbsp;&middot;&nbsp; 2024 – Present</div>
+  <ul>
+    <li>Built a full-stack PWA centralizing gym tracking, nutrition, habits, English learning, books, academic tasks, goals, and journaling into a single personal dashboard.</li>
+    <li>Integrated Google Gemini AI for personalized recipe suggestions with macro breakdowns and AI-generated grammar lessons with interactive exercises.</li>
+    <li>Developed a comprehensive English learning hub with a CEFR roadmap (A1–C1), Spaced Repetition System (SRS), TTS/voice recognition speaking practice, shadowing technique, and TOEFL preparation.</li>
+    <li>Habit system with streaks and GitHub-style annual heatmap; nutrition macro tracking; reading list synced via Notion API.</li>
+    <li>Technologies: Next.js 16, Supabase, Google Gemini AI, Notion API, Tailwind CSS, Recharts</li>
+  </ul>
+
+  <h3>IKA – Personal Website</h3>
+  <ul>
+    <li>Built a responsive portfolio site using React and Vite.js; deployed via Netlify to showcase frontend capabilities.</li>
+  </ul>
+
+  <h3>Inventory Management System (University Project, In Progress)</h3>
+  <ul>
+    <li>Designed and implemented backend architecture using Spring Boot and MySQL.</li>
+    <li>Focused on relational database design, RESTful API development, and frontend integration with Vite.js.</li>
+  </ul>
+
+  <h2>Research Interests</h2>
+  <ul>
+    <li>Distributed Systems &amp; Cloud Computing</li>
+    <li>Artificial Intelligence &amp; Data Analysis</li>
+    <li>Human-Computer Interaction</li>
+    <li>Software Engineering &amp; Scalable Web Applications</li>
+  </ul>
+
+</body>
+</html>
