@@ -74,7 +74,8 @@
       font-style: italic;
     }
     @media print {
-      body { margin: 0; padding: 30px 40px; }
+      body { margin: 0; padding: 22px 40px; font-size: 10.5pt; line-height: 1.45; }
+      h2 { margin-top: 18px; }
       .lang-switch { display: none; }
     }
     @media (max-width: 600px) {
@@ -129,9 +130,19 @@
     <li>Desarrollé un dashboard personalizable con arrastrar y soltar, indicadores clave y layouts persistentes por usuario.</li>
     <li>Creé un editor de plantillas de correo y un sistema de medios dinámico para administrar contenido sin modificar código.</li>
     <li>Desplegué una arquitectura multi-servicio con Docker Compose (Angular, Spring Boot, NestJS, PostgreSQL).</li>
+    <li>Diseñé y desarrollé la página promocional del producto (<a href="https://ikafen.com" target="_blank">ikafen.com</a>) con Next.js, Tailwind CSS y Framer Motion, con CI/CD hacia el servidor de producción.</li>
   </ul>
 
   <h2>Proyectos Académicos y Personales</h2>
+
+  <h3>MIRU clinicAI – SaaS Multi-clínica con Agente de IA</h3>
+  <div class="meta">Proyecto Dual TecNM (proyecto real en empresa, en equipo) &nbsp;&middot;&nbsp; Jul 2026 – Presente</div>
+  <ul>
+    <li>Colaboro en una plataforma SaaS multi-tenant para clínicas dentales (agenda, expedientes, odontograma/periodontograma, recetas, presupuestos, finanzas y bitácoras) con aislamiento por clínica mediante Row-Level Security en PostgreSQL.</li>
+    <li>Backend desacoplado con Hono + OpenAPI (Node.js/TypeScript) como única puerta a la base de datos; frontend en Next.js; todo contenerizado con Docker.</li>
+    <li>Automaticé CI/CD con GitHub Actions: build, typecheck y pruebas (Vitest + PostgreSQL) en cada PR, y despliegue a Railway con ambientes staging y producción, ejecutando migraciones antes de cada release.</li>
+    <li>Integré un agente de WhatsApp que agenda citas y envía recordatorios y campañas, y un plugin de Claude con servidor MCP que opera la clínica a través de la API con tokens de servicio por clínica.</li>
+  </ul>
 
   <h3>SYNERGOS – Sistema de Gestión y Automatización para Constructoras</h3>
   <div class="meta">Proyecto Personal &nbsp;&middot;&nbsp; 2026 – Presente &nbsp;&middot;&nbsp;
@@ -141,7 +152,6 @@
   <ul>
     <li>Diseñé y desarrollé una plataforma web multi-tenant para gestión integral de constructoras con 14 módulos: proyectos, presupuestos y finanzas, inventario, personal y nómina, compras, subcontratistas, comunicaciones, documentos, cumplimiento fiscal, planos, avance de obra, respaldo de datos, soporte y usuarios/organizaciones.</li>
     <li>Migré el backend de FastAPI a Java/Spring Boot mediante Clean Architecture y arquitectura hexagonal, manteniendo la funcionalidad de 14 módulos de negocio e implementando 416 pruebas automatizadas.</li>
-    <li>Backend original en FastAPI (Python) con arquitectura Clean Architecture (dominio/aplicación/infraestructura/API); autenticación JWT con RBAC granular por módulo y organización; PostgreSQL para persistencia.</li>
     <li>Frontend en Next.js 16 con SDK TypeScript auto-generado desde el esquema OpenAPI del backend; PWA con push notifications VAPID.</li>
     <li>Tecnologías: Java, Spring Boot, Next.js 16, FastAPI, PostgreSQL, Docker Compose, Radix UI, Zustand</li>
   </ul>

@@ -74,7 +74,8 @@
       font-style: italic;
     }
     @media print {
-      body { margin: 0; padding: 30px 40px; }
+      body { margin: 0; padding: 22px 40px; font-size: 10.5pt; line-height: 1.45; }
+      h2 { margin-top: 18px; }
       .lang-switch { display: none; }
     }
     @media (max-width: 600px) {
@@ -129,9 +130,19 @@
     <li>Developed a customizable drag-and-drop dashboard with key metrics and persistent per-user layouts.</li>
     <li>Created an email template editor and a dynamic media system for managing content without code changes.</li>
     <li>Deployed a multi-service architecture with Docker Compose (Angular, Spring Boot, NestJS, PostgreSQL).</li>
+    <li>Designed and built the product's marketing site (<a href="https://ikafen.com" target="_blank">ikafen.com</a>) with Next.js, Tailwind CSS and Framer Motion, with CI/CD to the production server.</li>
   </ul>
 
   <h2>Academic &amp; Personal Projects</h2>
+
+  <h3>MIRU clinicAI – Multi-clinic SaaS with AI Agent</h3>
+  <div class="meta">TecNM Dual-Education Project (real-world company project, team) &nbsp;&middot;&nbsp; Jul 2026 – Present</div>
+  <ul>
+    <li>Contribute to a multi-tenant SaaS platform for dental clinics (scheduling, patient records, odontogram/periodontogram, prescriptions, quotes, finances and logs) with per-clinic isolation via PostgreSQL Row-Level Security.</li>
+    <li>Decoupled backend built with Hono + OpenAPI (Node.js/TypeScript) as the sole gateway to the database; Next.js frontend; fully containerized with Docker.</li>
+    <li>Automated CI/CD with GitHub Actions: build, typecheck and tests (Vitest + PostgreSQL) on every PR, and deployment to Railway with staging and production environments, running database migrations before each release.</li>
+    <li>Integrated a WhatsApp agent that books appointments and sends reminders and campaigns, plus a Claude plugin with an MCP server that operates the clinic through the API using per-clinic service tokens.</li>
+  </ul>
 
   <h3>SYNERGOS – Construction Management &amp; Automation System</h3>
   <div class="meta">Personal Project &nbsp;&middot;&nbsp; 2026 – Present &nbsp;&middot;&nbsp;
@@ -141,7 +152,6 @@
   <ul>
     <li>Designed and developed a multi-tenant web platform for construction companies with 14 modules: projects, budgeting and finance, inventory, personnel and payroll, procurement, subcontractors, communications, documents, tax compliance, blueprints, construction progress, data backup, support, and users/organizations.</li>
     <li>Migrated the backend from FastAPI to Java/Spring Boot using Clean Architecture and hexagonal architecture, preserving the functionality of 14 business modules and implementing 416 automated tests.</li>
-    <li>Original backend built with FastAPI (Python) following Clean Architecture (domain/application/infrastructure/API); JWT authentication with granular RBAC per module and organization; PostgreSQL for persistence.</li>
     <li>Next.js 16 frontend with auto-generated TypeScript SDK from the backend's OpenAPI schema; PWA with VAPID push notifications.</li>
     <li>Technologies: Java, Spring Boot, Next.js 16, FastAPI, PostgreSQL, Docker Compose, Radix UI, Zustand</li>
   </ul>
